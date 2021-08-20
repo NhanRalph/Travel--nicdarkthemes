@@ -18,6 +18,10 @@
     background-repeat: no-repeat;
 }
 
+.underline-effect {
+    z-index: 0 !important;
+}
+
 /* Slider */
 .slider {
     overflow: hidden;

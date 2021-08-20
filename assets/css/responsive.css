@@ -365,21 +365,18 @@
 
     .more-filter__menu {
         width: 100%;
-        top: 110%;
+        top: 107%;
         -webkit-box-shadow: none;
                 box-shadow: none;
     }
 
-    .filter__more:hover .more-filter__menu  {
-        display: block;
-    }
 
     .more-filter__menu-item {
         margin-bottom: 30px;
     }
 
-    .mt-485 {
-        margin-top: 485px !important;
+    .mt-500 {
+        margin-top: 500px !important;
     }
 
     .promotion {

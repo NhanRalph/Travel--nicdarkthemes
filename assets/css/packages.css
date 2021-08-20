@@ -337,7 +337,7 @@
 .filter__more:hover .more-filter__menu {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: flex;
 }
 
 .filter__more::after {
