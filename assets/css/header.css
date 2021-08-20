@@ -1,0 +1,330 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+.container {
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+    z-index: 10000;
+}
+
+.header__content {
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* min-width: 1519px; */
+    width: 100%;
+
+}
+
+
+.header__logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 240px;
+    padding-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.header__logo-img {
+    width: 160px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+/* Have in responsive PC */
+/* 
+.header__nav {
+    flex: 5;
+}
+
+.header__nav-list {
+    display: flex;
+    align-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.header__nav-item {
+    position: relative;
+}
+
+.header__nav-link {
+    display: inline-block;
+    padding: 25px 17px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header__nav-item:last-child .header__nav-link {
+    margin: 13px 0 13px 30px;
+    padding: 12px 15px;
+}
+
+.header__nav-item:hover > .header__subnav-list {
+    display: block;
+}
+
+.header__subnav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    width: 190px;
+    list-style: none;
+    padding-left: 0;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    transform-origin: top left;
+    animation: fadeIn  ease .2s;
+}
+
+
+
+.header__subnav-item {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 15px 25px;
+}
+
+.header__subnav-item:hover {
+    background-color: #f9f9f9;
+}
+
+.header__subnav-link {
+    width: 100%;
+    text-decoration: none;
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.header__subnav-item-have-subnav {
+    position: relative;
+}
+
+
+.header__subnav-item-have-subnav .header__subnav-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-left: 215px;
+}
+
+.header__subnav-item-have-subnav:hover .header__subnav-list {
+    display: block;
+}
+
+.header__subnav-item-have-subnav .header__subnav-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 25px;
+    height: 100%;
+}
+
+.header__subnav-item-have-subnav > a::after {
+    content: "";
+    float: right;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #9a9a9a;
+    position: relative;
+    top: 1px;
+}
+
+.header__subnav-item-quanlity a::after {
+    content: "";
+    font-size: 1rem;
+    padding: 3px 5px;
+    float: right;
+    color: var(--white-color);
+    line-height: 1rem;
+}
+
+.header__subnav-item-quanlity--hot a::after {
+    content: "HOT";
+    background-color: var(--red-color);
+    border-radius: 3px;
+}
+
+
+.header__subnav-item-quanlity--best a::after {
+    content: "BEST";
+    background-color: var(--blue-color);
+    border-radius: 3px;
+}
+
+.header__subnav-item-quanlity--new a::after {
+    content: "NEW";
+    background-color: var(--green-color);
+    border-radius: 3px;
+} */
+
+.header__menu {
+    margin-left: auto;
+
+}
+
+.header__menu-icon {
+    opacity: 0.5;
+    font-size: 2.5rem;
+    color: var(--white-color);  
+    padding: 25px 0px;
+    cursor: pointer;
+}
+
+
+.btn-purple.header__nav-link:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#ba71da), to(#da717b)) !important;
+    background: -o-linear-gradient(left, #ba71da 0%, #da717b 100%) !important;
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%) !important;
+    opacity: 1 !important;
+}
+
+.btn-red.header__nav-link:hover {
+    background: -webkit-gradient(linear, left top, right top, from(#f76570), to(#f78d65)) !important;
+    background: -o-linear-gradient(left, #f76570 0%, #f78d65 100%) !important;
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%) !important;
+    opacity: 1 !important;
+}
+
+/* Header SlideBar */
+
+.header__slidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--white-color);
+    padding: 0 35px;
+    z-index: 100000;
+    border-left: 1px solid #ccc;
+    transform: translateX(100%);
+    transition: transform 1s;
+}
+
+.header__slidebar-close-icon {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 2.6rem;
+    color: #e2dfdf;
+}
+
+.header__nav-close-icon {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 2.6rem;
+    color: #e2dfdf;
+    display: none !important;
+}
+
+
+.header__slidebar-wrap {
+    margin: 30px 0;
+}
+
+.header__slidebar-header {
+    text-align: center;
+}
+
+.header__slidebar-quanlity {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #9a9a9a;
+    letter-spacing: 2px;
+}
+
+.header__slidebar-heading {
+    font-size: 2.5rem;
+    color: #555;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.header__slidebar-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header__slidebar-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 268px;
+}
+
+.header__slidebar-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    border-radius: 2px;
+}
+
+.header__slidebar-place-wrap {
+    /* overflow: hidden; */
+}
+
+.header__slidebar-place-wrap a {
+    display: block;
+    text-decoration: none;
+}
+
+.header__slidebar-place {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #555;
+}   
+
+.header__slidebar-location {
+    color: #9a9a9a;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.header__slidebar-location-icon {
+    margin-right: 4px;
+    opacity: 0.5;
+}
+
+.header__slidebar-location-prices {
+    margin-top: 20px;
+}

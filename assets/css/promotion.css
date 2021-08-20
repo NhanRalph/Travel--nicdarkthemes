@@ -1,0 +1,206 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* Promotion */
+.promotion {
+    margin-top: 78px;
+}
+
+.promotion__item {
+    position: relative;
+    z-index: -1;
+}
+
+.promotion__item:hover {
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px);
+}
+
+.promotion__img {
+    height: 231px;
+    position: relative;
+
+}
+
+.promotion__euro {
+    width: 100%;
+    background-image: url(../img/promotion/berlin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion__hongkong {
+    width: 100%;
+    background-image: url(../img/promotion/hongkong.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion__sanfrancisco {
+    width: 100%;
+    background-image: url(../img/promotion/sanfrancisco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion__phuket {
+    width: 100%;
+    background-image: url(../img/promotion/phuket.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion__amsterdam {
+    width: 100%;
+    background-image: url(../img/promotion/amsterdam.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion__tuscany {
+    width: 100%;
+    background-image: url(../img/promotion/tuscany.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promotion__item {
+    position: relative;
+    border: 0.5px solid #f0ecec;
+}
+
+.promotion__item-saling {
+    position: relative;
+}
+
+.promotion__item-saling::after {
+    content: "SALE";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #555;
+    color: var(--white-color);
+    border-radius: 30px;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    z-index: 1;
+}
+
+.promotion__item-icon {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 1;
+    bottom: -25px;
+    right: 20px;
+}
+
+.promotion__item-icon-img {
+    height: 26px;
+    width: 26px;
+}
+
+.promotion__item-body {
+    padding: 30px
+}
+
+.promotion__item-body a {
+    text-decoration: none;
+    display: block;
+}
+
+.promotion__item-head-wrap {
+
+}
+
+.promotion__item-head-headding {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.promotion__item-head-location {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.promotion__item-head-icon {
+    font-size: 1.5rem;
+}
+
+.promotion__item-decs-and-price {
+    border-top: 0.5px solid #f0ecec;
+    border-bottom: 0.5px solid #f0ecec;
+    margin: 20px 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
+}
+
+.promotion__item-decs {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #555;
+    letter-spacing: 2px;
+}
+
+.promotion__item-decs-text {
+    line-height: 2rem;
+}
+
+.promotion__item-price {
+    color: #555;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;    
+}
+
+.promotion__item-price-sale {
+    font-size: 2rem;
+    text-decoration: line-through;
+    color: #9a9a9a;
+}
+
+.promotion__item-text {
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+}
+
+.promotion__item-btn {
+    margin-top: 22px;
+    display: inline-block !important;
+}
+

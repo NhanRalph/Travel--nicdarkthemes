@@ -1,0 +1,160 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/* Footer */
+.footer {
+    margin-top: 78px;
+    padding: 80px 0;
+    background-image: url(../img/footer/parallax-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__wrap {
+    
+}
+
+.footer__header-with-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 45px;
+}
+
+.footer__header {
+    width: 50%;
+    padding-left: 17%;
+    margin-bottom: 14px;
+}
+
+.footer__search {
+    width: 50%;
+
+}
+
+.footer__input {
+    margin-left: 15px;
+    background-color: #f9f9f9;
+    width: 258px;
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.footer__send-btn {
+    margin-left: 20px;
+    line-height: 2rem;
+}
+
+.footer__body {
+    background-color: var(--white-color);
+    padding: 35px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__body-text {
+    width: 50%;
+    padding: 0 35px 0 15px;
+}
+
+.footer__body-logo {
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.footer__body-paragraph {
+    color: #9a9a9a;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.footer__body-socials a {
+    text-decoration: none;
+}
+
+.footer__body-social-icon {
+    font-size: 2.2rem;
+    margin-right: 20px;
+    color: #555;
+}
+
+.footer__body-social-icon:hover {
+    opacity: 0.7;
+}
+
+.footer__body-link-path-wrap {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.footer__body-link-path {
+
+}
+
+.footer__body-link-path-heading {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}
+
+.footer__body-link-path-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer__body-link-path-item {
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    letter-spacing: 1px;
+}
+
+.footer__body-link-path-item a {
+    text-decoration: none;
+    color: #9a9a9a;
+}
+
+.footer__body-link-path-item:hover a {
+    opacity: 0.8;
+}
+
+.footer__body-link-path-list .footer__body-link-path-item::before {
+    content: ">";
+    font-size: 1.5rem;
+    color: #9a9a9a;
+    line-height: 2.7rem;
+    margin-right: 6px;
+}
+
+.footer__copyright {
+    background-color: var(--blue-color);
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
