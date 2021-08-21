@@ -650,6 +650,14 @@
 
 /* Small Mobile */
 @media (max-width: 475px) {
+    html {
+        font-size: 50%;
+    }
+
+    .slider__content {
+        padding-top: 200px;
+    }
+
     .slider__heading,
     .slider__decs  {
         width: 80%;
