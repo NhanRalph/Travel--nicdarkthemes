@@ -184,6 +184,17 @@
     /* Common */
     /* size L: PC, M: Tablet, S: Mobile */
 
+    
+    
+    .mt-590 {
+        margin-top: 590px !important;
+    }
+    
+
+    .menu__arrow-up {
+        display: none;
+    }
+
     .none-size-M-S {
         display: none;
     }
@@ -366,8 +377,8 @@
     .more-filter__menu {
         width: 100%;
         top: 107%;
-        -webkit-box-shadow: none;
-                box-shadow: none;
+        /* -webkit-box-shadow: none;
+                box-shadow: none; */
     }
 
 
@@ -375,9 +386,6 @@
         margin-bottom: 30px;
     }
 
-    .mt-500 {
-        margin-top: 500px !important;
-    }
 
     .promotion {
         margin-top: 85px;
@@ -645,7 +653,25 @@
         text-align: center;
     }
 
+    .more-filter__menu {
+        flex-wrap: wrap;
+        top: 0;
+        padding: 20px;
+    }
+
+    .more-filter__menu-item {
+        width: 49%;
+    }
+
+    .more-filter__item {
+        line-height: 2.6rem;
+    }
+
     
+    .mt-450-size-M {
+        margin-top: 450px !important;
+    }
+
 }
 
 /* Small Mobile */
@@ -653,6 +679,11 @@
     html {
         font-size: 50%;
     }
+
+    .more-filter__item {
+        line-height: 3rem;
+    }
+
 
     .slider__content {
         padding-top: 200px;
