@@ -258,18 +258,23 @@
         margin-bottom: 20px;
     }
 
-    .header__nav {
+    .header__nav-container { 
+        display: flex;
         position: fixed;
         top: 0;
         right: 0;
+        z-index: 10001;
+        transform: translateX(100%);
+        transition: transform 1s;
+    }
+
+    .header__nav {
+        margin-left: auto;
+        width: 285px;
         height: 100vh;
         padding: 40px;
         background-color: #555;
         overflow-y: scroll;
-        z-index: 20;
-        /* display: none; */
-        transform: translateX(100%);
-        transition: transform 1s;
     }
 
     .header__nav-close-icon {
@@ -375,8 +380,7 @@
     }
 
     .more-filter__menu {
-        width: 100%;
-        top: 107%;
+        /* width: auto; */
         /* -webkit-box-shadow: none;
                 box-shadow: none; */
     }
@@ -655,7 +659,8 @@
 
     .more-filter__menu {
         flex-wrap: wrap;
-        top: 0;
+        width: 100%;
+        top: -362px;
         padding: 20px;
     }
 

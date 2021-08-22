@@ -79,14 +79,16 @@
 }
 
 .product__item:hover {
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px);
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
+    transition: transform 0.2s;
 }
 
 .product__item-img {
     width: 100%;
     display: block;
+    border-radius: 2px;
 }
 
 .product__item-heading {

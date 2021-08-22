@@ -214,19 +214,34 @@
 
 /* Header SlideBar */
 
-.header__slidebar {
+.header__slidebar-container {
+    display: flex;
     position: fixed;
-    top: 0;
+    justify-content: flex-end;
+    /* top: 0; */
+    /* bottom: 0; */
     right: 0;
+    /* left: 0; */
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 100001;
+    transform: translateX(350px);
+    transition: all 1s;
+}
+
+
+.header__slidebar {
+    /* position: fixed; */
+    /* top: 0;
+    right: 0; */
+    margin-left: auto;
     width: 350px;
     height: 100vh;
     overflow-y: scroll;
     background-color: var(--white-color);
     padding: 0 35px;
-    z-index: 100000;
+    /* z-index: 100000; */
     border-left: 1px solid #ccc;
-    transform: translateX(100%);
-    transition: transform 1s;
+    
 }
 
 .header__slidebar-close-icon {
@@ -237,6 +252,7 @@
     padding: 15px;
     font-size: 2.6rem;
     color: #e2dfdf;
+    cursor: pointer;
 }
 
 .header__nav-close-icon {
@@ -249,7 +265,6 @@
     color: #e2dfdf;
     display: none !important;
 }
-
 
 .header__slidebar-wrap {
     margin: 30px 0;
@@ -295,9 +310,6 @@
     border-radius: 2px;
 }
 
-.header__slidebar-place-wrap {
-    /* overflow: hidden; */
-}
 
 .header__slidebar-place-wrap a {
     display: block;

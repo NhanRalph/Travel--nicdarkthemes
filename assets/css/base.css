@@ -177,7 +177,7 @@ html {
 }
 /* Common */
 .none {
-    display: none;
+    display: none !important;
 }
 
 .mt-50 {
@@ -394,7 +394,7 @@ html {
 .underline-effect {
     position: relative;
     display: inline-block;
-    z-index: -1;
+    z-index: 0;
 }
 
 .underline-effect::after {
@@ -504,13 +504,15 @@ html {
 }
 
 /* Open and Close Element */
-.header__slidebar.header__slidebar--open {
+.header__slidebar-container.header__slidebar--open {
     transform: translateX(0);
+    left: 0;
 }
 
 
-.header__nav.header__nav--open {
+.header__nav-container.header__nav--open {
     transform: translateX(0);
+    left: 0;
 }
 
 /* Travel */

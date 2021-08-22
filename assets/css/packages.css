@@ -5,6 +5,10 @@
 * Browsers: last 4 version
 */
 
+.promotion .underline-effect {
+    z-index: -1;
+}
+
 .container {
     position: relative;
 }
@@ -224,13 +228,35 @@
     margin-right: 5px;
 }
 
-.filter__more-filter {
+.filter__more {
     position: absolute;
     bottom: 0;
     right: 50%;
     -webkit-transform: translate(50%, 50%);
-        -ms-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    z-index: 10001;
+}
+
+.filter__more::before {
+    content: "";
+    position: absolute;
+    top: -146%;
+    right: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.filter__more::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.filter__more-filter {
     background-color: var(--dark-orange-color);
     border-radius: 30px;
     padding: 8px 20px;
@@ -245,6 +271,64 @@
 .filter__more-filter-icon {
     font-size: 1.1rem;
     margin-right: 5px;
+}
+
+
+.filter__more:hover .more-filter__menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: flex;
+}
+
+
+.more-filter__menu {
+    position: absolute;
+    top: calc(100% + 20px);  
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 700px;
+    background-color: var(--white-color);
+    -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 35px;
+    padding-right: 70px;
+    z-index: 100;
+    -webkit-animation: fadeInTravel ease 0.2s;
+            animation: fadeInTravel ease 0.2s;
+    display: none;
+}
+
+.more-filter__heading {
+    margin: 0 0 20px;
+    color: #555;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.more-filter__list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.more-filter__item {
+    font-size:  1.5rem;
+    line-height: 3rem;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+}
+
+.more-filter__item input {
+    margin-right: 5px;
+    margin-left: 2px;
 }
 
 .filter__options {
@@ -334,70 +418,6 @@
     opacity: 1;
 }
 
-.filter__more:hover .more-filter__menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: flex;
-}
-
-.filter__more::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 0;
-    height: 40px;
-    width: 100%;
-}
-
-.more-filter__menu {
-    position: absolute;
-    top: 120%;  
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 700px;
-    background-color: var(--white-color);
-    -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
-            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
-    padding: 35px;
-    padding-right: 70px;
-    z-index: 100;
-    -webkit-animation: fadeInTravel ease 0.2s;
-            animation: fadeInTravel ease 0.2s;
-    display: none;
-}
-
-.more-filter__heading {
-    margin: 0 0 20px;
-    color: #555;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-}
-
-.more-filter__list {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.more-filter__item {
-    font-size:  1.5rem;
-    line-height: 3rem;
-    color: #9a9a9a;
-    letter-spacing: 1px;
-}
-
-.more-filter__item input {
-    margin-right: 5px;
-    margin-left: 2px;
-}
 
 /*
 * Prefixed by https://autoprefixer.github.io
@@ -558,4 +578,11 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+
+@media (max-width: 780px) {
+    .filter__more {
+        width: 100%;
+    }
 }
