@@ -76,13 +76,15 @@
 
 .product__item {
     width: 22%;
+    transition: transform 0.2s linear;
+
 }
 
 .product__item:hover {
     -webkit-transform: translateY(-4px);
         -ms-transform: translateY(-4px);
             transform: translateY(-4px);
-    transition: transform 0.2s;
+    transition: transform 0.2s linear;
 }
 
 .product__item-img {
